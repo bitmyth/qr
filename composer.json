@@ -1,4 +1,12 @@
 {
+  "name": "bitmyth/qr",
+  "keywords": [
+    "qr",
+    "php",
+    "qrcode",
+    "qrcode decode",
+    "qrcode encode"
+  ],
   "require": {
     "khanamiryan/qrcode-detector-decoder": "^1.0",
     "symfony/console": "^4.1"
