@@ -1,0 +1,31 @@
+<?php
+require __DIR__ . "/../vendor/autoload.php";
+
+use Console\QRDecode;
+use Console\QREncode;
+use Symfony\Component\Console\Application;
+use Symfony\Component\Console\Input\ArgvInput;
+
+$output = new Symfony\Component\Console\Output\ConsoleOutput();
+
+$application = new Application();
+
+$application->add(new QREncode());
+$application->add(new QRDecode());
+
+$input = new ArgvInput($argv);
+
+if (true === $input->hasParameterOption(array('-d'), true)) {
+// Modify $argv
+    array_splice($argv, 1, 1, 'qr:decode');
+}else{
+    array_splice($argv, 1, 0, 'qr');
+}
+
+$input = new ArgvInput($argv);
+
+$application->run($input);
+
+//$input = new Symfony\Component\Console\Input\InputArgument('path');
+//$qrcode = new QrReader('path/to_image');
+//$text = $qrcode->text();

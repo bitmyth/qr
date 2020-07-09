@@ -1,0 +1,15 @@
+{
+  "require": {
+    "khanamiryan/qrcode-detector-decoder": "^1.0",
+    "symfony/console": "^4.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Console\\": "src/Console/",
+      "Bridge\\": "src/Bridge/"
+    }
+  },
+  "bin": [
+    "bin/qr.php"
+  ]
+}
