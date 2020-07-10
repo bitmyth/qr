@@ -943,7 +943,7 @@
             $image = self::image($frame, $pixelPerPoint, $outerFrame);
             
             if ($filename === false) {
-                @Header("Content-type: image/png");
+                Header("Content-type: image/png");
                 ImagePng($image);
             } else {
                 if($saveandprint===TRUE){

@@ -9,6 +9,8 @@ if(file_exists(__DIR__ . '/../../../autoload.php')){
 	require(__DIR__ . '/../../../autoload.php');
 }
 
+error_reporting(E_ERROR);
+
 use Console\QRDecode;
 use Console\QREncode;
 use Symfony\Component\Console\Application;
