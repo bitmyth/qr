@@ -1,0 +1,13 @@
+{
+	"blacklist": [
+		"tests",
+		"yaml"
+	],
+	"directories":[
+		"vendor",
+		"src"
+	],
+	"main": "bin/qr",
+	"output": "qr.phar",
+	"stub": true
+}
