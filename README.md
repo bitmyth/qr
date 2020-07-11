@@ -14,3 +14,7 @@
 
 # base qrcode library
 https://sourceforge.net/projects/phpqrcode/files/releases/
+
+#references
+
+http://phpqrcode.sourceforge.net/examples/index.php?example=712

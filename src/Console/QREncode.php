@@ -25,7 +25,7 @@ class QREncode extends Command
 
     protected function interact(InputInterface $input, OutputInterface $output)
     {
-        $output->writeln("generating qrcode");
+        // $output->writeln("generating qrcode");
     }
 
     protected function execute(InputInterface $input, OutputInterface $output)
@@ -43,7 +43,8 @@ class QREncode extends Command
         $qr = new Qr();
         $fileName = getcwd() . '/out.png';
         $qr->generate($fileName, $data);
-        $output->writeln('Check out QR code here:' . $fileName);
+        $output->writeln('QR code file :' . $fileName);
+        $output->writeln($qr->text($data));
     }
 
 }
