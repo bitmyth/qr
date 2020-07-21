@@ -28,7 +28,7 @@ $input = new ArgvInput($argv);
 if (true === $input->hasParameterOption(array('-d'), true)) {
 // Modify $argv
     array_splice($argv, 1, 1, 'qr:decode');
-}else{
+} else {
     array_splice($argv, 1, 0, 'qr');
 }
 
